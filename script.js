@@ -6,6 +6,9 @@ const movieDB = {
   genre: [],
   privat: false,
 };
-const thatMovies = prompt("Последний фильм?");
-const ball = prompt("Оценка?");
-movieDB.movies[thatMovies] = ball;
+const thatMovies1 = prompt("Последний фильм?");
+const ball1 = prompt("Оценка?");
+const thatMovies2 = prompt("Последний фильм?");
+const ball2 = prompt("Оценка?");
+movieDB.movies[thatMovies1] = ball1;
+movieDB.movies[thatMovies2] = ball2;
