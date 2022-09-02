@@ -12,3 +12,4 @@ const thatMovies2 = prompt("Последний фильм?");
 const ball2 = prompt("Оценка?");
 movieDB.movies[thatMovies1] = ball1;
 movieDB.movies[thatMovies2] = ball2;
+console.log(movieDB);
