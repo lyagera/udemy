@@ -20,8 +20,8 @@ const movieDB = {
 
 function remember() {
   for (let i = 0; i < 2; i++) {
-    const thatMovies = prompt("Последний фильм?");
-    const ball = prompt("Оценка?");
+    const thatMovies = prompt("Последний фильм?").trim();
+    const ball = prompt("Оценка?").trim();
     if (
       thatMovies != null &&
       ball != null &&
