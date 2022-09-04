@@ -24,3 +24,4 @@ const nuggets = 2;
 if ((hamburger && cola) || (fries === 3 && nuggets)) {
   console.log("Done!");
 }
+z;
