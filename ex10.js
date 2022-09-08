@@ -28,7 +28,7 @@ function showProgrammingLangs(plan) {
     for (let key in lang) {
       a[key] = `Язык ${key} изучен на ${lang[key]}`;
     }
-    console.log(a.join());
+    console.log(Object.values(a).join("\n"));
 
     // return a.join("");
   }
