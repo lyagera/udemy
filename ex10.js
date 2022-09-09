@@ -7,8 +7,20 @@ const personalPlanPeter = {
       js: "20%",
       php: "10%",
       ruby: "30%",
+      sdfsd: "25%",
     },
     exp: "3 month",
+  },
+  showAgeAndLangs: function () {
+    const language = personalPlanPeter.skills.languages;
+    console.log(language.toString().replace(",", " "));
+
+    console.log(
+      `Мне ${personalPlanPeter.age} и я владею языками: ${language
+        .toString()
+        .toUpperCase()
+        .replace(",", " ")}`
+    );
   },
 };
 
@@ -21,6 +33,7 @@ function showProgrammingLangs(plan) {
   const a = {};
   const lang = Object.assign({}, personalPlanPeter.skills.programmingLangs);
   console.log(Object.hasOwn(lang, null));
+
   console.log("a");
   if (Object.keys(lang).length == 0) {
     console.log("sdf");
@@ -34,3 +47,5 @@ function showProgrammingLangs(plan) {
   }
 }
 showProgrammingLangs(personalPlanPeter);
+
+personalPlanPeter.showAgeAndLangs(personalPlanPeter);
