@@ -1,21 +1,20 @@
-let films;
-
-function start() {
-  films = +prompt("Сколько фильмов просмотрено?");
-
-  while (films == "" || films == null || isNaN(films)) {
-    films = +prompt("Сколько фильмов просмотрено?");
-  }
-}
-
-start();
-
 const movieDB = {
-  count: films,
+  count: 0,
   movies: {},
   actors: {},
   genre: [],
   privat: false,
+  start: function start() {
+    movieDB.count = +prompt("Сколько фильмов просмотрено?");
+
+    while (
+      movieDB.count == "" ||
+      movieDB.count == null ||
+      isNaN(movieDB.count)
+    ) {
+      movieDB.count = +prompt("Сколько фильмов просмотрено?");
+    }
+  },
 };
 
 function remember() {
