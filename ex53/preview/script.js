@@ -2,7 +2,7 @@
 
 const box = document.querySelector(".box");
 
-const newHeight = 0;
+const newHeight = 10;
 const newWidth = 400;
 
 function changeParams(elem, h, w) {
@@ -15,4 +15,4 @@ changeParams(box, newHeight, newWidth);
 
 let userName;
 let userKey;
-console.log(userName ?? user ?? "User");
+console.log(userName ?? userKey ?? "User");
