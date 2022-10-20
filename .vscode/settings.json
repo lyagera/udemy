@@ -1,0 +1,9 @@
+{
+    "gitlens.currentLine.enabled": true,
+    "gitlens.currentLine.pullRequests.enabled": true,
+    "gitlens.currentLine.scrollable": true,
+    "gitlens.codeLens.includeSingleLineSymbols": false,
+    "gitlens.hovers.currentLine.over": "annotation",
+    "prettier.bracketSameLine": false,
+    "editor.renderLineHighlightOnlyWhenFocus": false
+}
